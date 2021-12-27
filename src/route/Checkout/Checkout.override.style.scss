@@ -1,0 +1,16 @@
+.Checkout {
+  padding-bottom: var(--header-nav-height);
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  &::before {
+    @include after-mobile {
+      content: "";
+      background: var(--breadcrumbs-background);
+      min-height: 20px;
+      display: block;
+    }
+  }
+}
